@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tugas em Alta - Loja Oficial</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('img/fundo-site.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+header { 
+  background: rgba(139,0,0,0.8);
+  padding: 20px;
+  text-align: center;
+}
+h1, p { margin: 0; }
+.banner { text-align: center; margin: 20px 0; }
+.banner img { width: 90%; max-width: 800px; border-radius: 10px; }
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background: rgba(17,17,17,0.8);
+  padding: 10px;
+  flex-wrap: wrap;
+}
+nav a { color: white; text-decoration: none; font-weight: bold; }
+.container { padding: 20px; max-width: 800px; margin: auto; }
+.grid { display: grid; grid-template-columns: 1fr; gap: 15px; }
+.card {
+  background: rgba(21,21,21,0.85);
+  border: 1px solid #8b0000;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+.card img { width: 100%; max-width: 300px; border-radius: 8px; margin-bottom: 10px; }
+button {
+  background: #8b0000;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+button:hover { background: #b30000; }
+html, body { height: 100%; overflow-y: auto; }
+
+/* Regras */
+.regras {
+  background: rgba(21,21,21,0.85);
+  border: 1px solid #8b0000;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Tugas em Alta</h1>
+<p>Loja Oficial do Servidor</p>
+</header>
+
+<div class="banner">
+<img src="img/banner-titulo.png" alt="Banner Tugas em Alta">
+</div>
+
+<nav>
+<a href="#vips">VIP</a>
+<a href="#carros">Carros Únicos</a>
+<a href="#packs">Packs</a>
+<a href="#regras">Regras</a>
+</nav>
+
+<!-- VIP -->
+<div class="container" id="vips">
+<h2>VIP</h2>
+<div class="grid">
+<div class="card">
+<img src="img/vip-bronze.png" alt="VIP Bronze">
+<h3>VIP Bronze</h3>
+<p>Benefícios básicos</p>
+<p>Preço: 5€</p>
+<button>Comprar</button>
+</div>
+<div class="card">
+<img src="img/vip-prata.png" alt="VIP Prata">
+<h3>VIP Prata</h3>
+<p>Benefícios médios</p>
+<p>Preço: 10€</p>
+<button>Comprar</button>
+</div>
+<div class="card">
+<img src="img/vip-ouro.png" alt="VIP Ouro">
+<h3>VIP Ouro</h3>
+<p>Benefícios completos</p>
+<p>Preço: 20€</p>
+<button>Comprar</button>
+</div>
+</div>
+</div>
+
+<!-- Carros Únicos -->
+<div class="container" id="carros">
+<h2>Carros Únicos</h2>
+<div class="grid">
+<div class="card">
+<img src="img/nissan-gtr.png" alt="Nissan GTR">
+<h3>Nissan GTR</h3>
+<p>Carro exclusivo</p>
+<p>Preço: 15€</p>
+<button>Comprar</button>
+</div>
+<div class="card">
+<img src="img/lamborghini.png" alt="Lamborghini Huracan">
+<h3>Lamborghini Huracan</h3>
+<p>Super carro VIP</p>
+<p>Preço: 25€</p>
+<button>Comprar</button>
+</div>
+<div class="card">
+<img src="img/bmw-m5.png" alt="BMW M5">
+<h3>BMW M5</h3>
+<p>Carro exclusivo VIP</p>
+<p>Preço: 20€</p>
+<button>Comprar</button>
+</div>
+<div class="card">
+<img src="img/mercedes-amg.png" alt="Mercedes AMG">
+<h3>Mercedes AMG</h3>
+<p>Super carro VIP</p>
+<p>Preço: 22€</p>
+<button>Comprar</button>
+</div>
+<div class="card">
+<img src="img/audi-r8.png" alt="Audi R8">
+<h3>Audi R8</h3>
+<p>Carro exclusivo</p>
+<p>Preço: 18€</p>
+<button>Comprar</button>
+</div>
+</div>
+</div>
+
+<!-- Packs -->
+<div class="container" id="packs">
+<h2>Packs</h2>
+<div class="grid">
+<div class="card">
+<img src="img/pack-iniciante.png" alt="Pack Iniciante">
+<h3>Pack Iniciante</h3>
+<p>Dinheiro + carro</p>
+<p>Preço: 12€</p>
+<button>Comprar</button>
+</div>
+<div class="card">
+<img src="img/pack-lenda.png" alt="Pack Lenda">
+<h3>Pack Lenda</h3>
+<p>VIP + carro + dinheiro</p>
+<p>Preço: 40€</p>
+<button>Comprar</button>
+</div>
+<div class="card">
+<img src="img/pack-bmw.png" alt="Pack BMW">
+<h3>Pack BMW</h3>
+<p>VIP + BMW M5</p>
+<p>Preço: 30€</p>
+<button>Comprar</button>
+</div>
+<div class="card">
+<img src="img/pack-mercedes.png" alt="Pack Mercedes">
+<h3>Pack Mercedes</h3>
+<p>VIP + Mercedes AMG</p>
+<p>Preço: 32€</p>
+<button>Comprar</button>
+</div>
+<div class="card">
+<img src="img/pack-audi.png" alt="Pack Audi">
+<h3>Pack Audi</h3>
+<p>VIP + Audi R8</p>
+<p>Preço: 28€</p>
+<button>Comprar</button>
+</div>
+</div>
+</div>
+
+<!-- Regras -->
+<div class="container" id="regras">
+<h2>Regras do RP</h2>
+<div class="regras">
+Todos os jogadores devem respeitar os outros dentro e fora do RP, sem assédio, insultos ou discriminação. O RP deve ser realista, sem atravessar paredes, glitches, metagaming ou powergaming. Morte, combate, carjacking e assaltos só podem ocorrer com motivo RP e de forma coerente. Dinheiro, carros e packs devem ser usados de forma justa, sem explorar falhas, e veículos únicos são exclusivos do comprador. Profissões devem seguir protocolos e hierarquias, bugs devem ser reportados imediatamente e chat/voz devem ser usados para RP, evitando spam e mensagens sem sentido. Quebrar as regras pode resultar em avisos, kick ou ban, dependendo da gravidade. O objetivo principal é se divertir, criar histórias únicas e manter a comunidade saudável.
+</div>
+</div>
+
+</body>
+</html>
